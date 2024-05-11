@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+  }
+  
+  .navigation {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333;
+    height: 60px;
+    width: 100%;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    display: inline-block;
+  }
+  
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: .8em;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 30px;
+  }
+  
+  .bar {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: 0.25s ease-in-out;
+  }
+  
+  .bar:nth-child(1) { top: 0px; }
+  .bar:nth-child(2), .bar:nth-child(3) { top: 13px; }
+  .bar:nth-child(4) { top: 26px; }
+  
+  .menu-toggle.open .bar:nth-child(1),
+  .menu-toggle.open .bar:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  .menu-toggle.open .bar:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .active-link {
+    border-bottom: 2px solid rgb(168, 21, 21); 
+  }
+  
+  .active-link-mobile {
+    background-color: #fff; 
+    color: #000; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navigation{
+        position: static;    
+    }
+    .menu-toggle {
+      display: block;
+      margin-right: 20px;
+    }
+  
+    .nav-list {
+      display: none;
+      position: absolute;
+      margin: 0;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 20px;
+    }
+  
+    .nav-item {
+      display: block;
+      text-align: center;
+    }
+  
+    .nav-link {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .nav-link.active-link, 
+    .nav-link.active-link-mobile {
+        background-color: #fff; 
+        color: #000; 
+    }
+
+    .menu-toggle.open + .nav-list {
+      display: block;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

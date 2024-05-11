@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguimiento de Hábitos</title>
+    <link rel="stylesheet" href="/styles/create-habit.css" />
+    <script src="/js/create.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Seguimiento de Hábitos Personales</h1>
+      <div class="habit-form">
+        <input type="text" id="habit" placeholder="Ingrese el hábito" />
+        <input
+          type="number"
+          id="time-limit"
+          placeholder="Tiempo límite en minutos"
+        />
+        <button onclick="addHabit()">Agregar Hábito</button>
+      </div>
+      <div id="habit-list"></div>
+      <div id="statistics"></div>
+    </div>
+    <script src="/js/create.js"></script>
+  </body>
+</html>
