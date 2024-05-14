@@ -1,0 +1,123 @@
+#main-container{
+    min-height: 84vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container-context{
+    padding: 3rem 1rem 4rem 1rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-container-context h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+.contact-container-sub{
+    flex-grow: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-container-sub-information{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.contact-container-sub-information h2{
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.contact-container-sub-information p{
+    font-size: 1em;
+}
+
+.form { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.form-input,.agreement{ 
+    width: 80%; 
+    padding: 10px; 
+}
+
+.agreement{
+    font-size: .9em;
+    letter-spacing: 1px;
+    color: rgb(100, 100, 100);
+}
+
+.agreement input{
+    margin-right: 10px;
+}
+
+.form-button { 
+    padding: 10px 15px;
+    width: 8rem;
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    letter-spacing: 1px; 
+    cursor: pointer; 
+}
+
+.form-button:hover { 
+    background-color: #0056b3; 
+}
+
+#errorMessagesContainer {
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+}
+
+.error-message {
+    background-color: rgb(255, 123, 16);
+    color: white;
+    font-size: .8em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 5px; 
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1; 
+  }
+  
+  .error-message.hide {
+    opacity: 0; 
+    visibility: hidden;
+  }
+  
+  .error-message:hover{
+    cursor: pointer;
+  }
+
+  .error {
+    border: 2px solid red;
+  }
+
+@media screen and (max-width: 977px) {
+    .contact-container-context{
+        padding: 3rem 1rem 1rem 1rem ; ;
+    }
+    .contact-container-sub{
+        padding: 10px 20px 40px 20px;
+    }
+    .contact-container-sub-information{
+        padding: 20px 20px 50px 20px;
+    }
+}

@@ -3,11 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seguimiento de Hábitos</title>
+    <title>Habit creation</title>
     <link rel="stylesheet" href="/styles/create-habit.css" />
+    <link rel="stylesheet" href="/styles/general.css" />
     <script src="/js/create.js"></script>
   </head>
   <body>
+    <nav class="navigation">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link">Index</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active-link">YourHabits</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pages/your-progress.html" class="nav-link">YourProgress</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pages/contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <div class="container">
       <h1>Seguimiento de Hábitos Personales</h1>
       <div class="habit-form">
@@ -22,6 +45,33 @@
       <div id="habit-list"></div>
       <div id="statistics"></div>
     </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="developer-info">
+          <p>
+            <span class="copyright">CopyRight &copy; 2024</span> Desarrollado
+            por Calvi Matias y Castillon Alexis
+          </p>
+        </div>
+        <ul class="footer-list" id="footer-list">
+          <li class="footer-item">
+            <a href="/index.html" class="footer-link">Index</a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link">YourHabits</a>
+          </li>
+          <li class="footer-item">
+            <a href="/pages/your-progress.html" class="footer-link"
+              >YourProgress</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="/pages/contact.html" class="footer-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="/js/create.js"></script>
+    <script src="/js/general.js"></script>
   </body>
 </html>

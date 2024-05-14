@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link">Index</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pages/create-habit.html" class="nav-link">YourHabits</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pages/your-progress.html" class="nav-link">YourProgress</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-container">
+      <section class="contact-container-context">
+        <h1>Do you have doubts or questions?</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          dolorum accusantium nam omnis accusamus sint, aut cum adipisci in.<br />
+          Eum, pariatur esse ratione quia perspiciatis velit quasi earum
+          deserunt incidunt!
+        </p>
+      </section>
+      <section class="contact-container-sub">
+        <article class="contact-container-sub-information">
+          <h2>Contact information</h2>
+          <p>C/Sant Sebastia, 69</p>
+          <p>07701 - Maó (Menorca)</p>
+          <p>+34 971 37 00 95</p>
+          <p>+34 620 92 57 63</p>
+          <p>hello@socialchef.es</p>
+        </article>
+        <form class="form" id="registrationForm">
+          <input
+            type="text"
+            id="name"
+            class="form-input"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            class="form-input"
+            placeholder="Phone"
+            required
+          />
+          <textarea
+            id="message"
+            class="form-input"
+            rows="4"
+            placeholder="Message"
+            required
+          ></textarea>
+          <label class="agreement"
+            ><input type="checkbox" required />By using this form you gree with
+            the storage and handling of your data by this website</label
+          >
+          <button type="submit" class="form-button">Submit</button>
+        </form>
+      </section>
+    </main>
+    <div id="errorMessagesContainer"></div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="developer-info">
+          <p>
+            <span class="copyright">CopyRight &copy; 2024</span> Desarrollado
+            por Calvi Matias y Castillon Alexis
+          </p>
+        </div>
+        <ul class="footer-list" id="footer-list">
+          <li class="footer-item">
+            <a href="/index.html" class="footer-link">Index</a>
+          </li>
+          <li class="footer-item">
+            <a href="/pages/create-habit.html" class="footer-link"
+              >YourHabits</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="/pages/your-progress.html" class="footer-link"
+              >YourProgress</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="/js/contact.js"></script>
+    <script src="/js/general.js"></script>
+  </body>
+</html>
