@@ -37,56 +37,70 @@ function renderHabitsProgress() {
     </button>
     <div class="habit-container">
       <div class="habit-card">
-        <h2>Habit: ${habitData.title}</h2>
-        <p>Category: ${habitData.category}</p>
-        <p>Date Start: ${new Date(habitData.startDate).toLocaleString()}</p>
-        <p>Date End: ${new Date(habitData.endDate).toLocaleString()}</p>
-        <p>Duration by day: ${habitData.duration.hours} hours, ${
-      habitData.duration.minutes
-    } minutes</p>
+        <h2 class="montserrat-bold" style="margin-bottom: 10px;">Habit: ${
+          habitData.title
+        }</h2>
+        <p class="montserrat-normal" style="font-size:.9em;">Category: ${
+          habitData.category
+        }</p>
+        <p class="montserrat-normal" style="font-size:.9em;">Date Start: ${new Date(
+          habitData.startDate
+        ).toLocaleString()}</p>
+        <p class="montserrat-normal" style="font-size:.9em;">Date End: ${new Date(
+          habitData.endDate
+        ).toLocaleString()}</p>
+        <p class="montserrat-normal" style="font-size:.9em;">Duration by day: ${
+          habitData.duration.hours
+        } hours, ${habitData.duration.minutes} minutes</p>
       </div>
       <div class="habit-progress">
         <div class="habit-monthly">
-          <h2>Total progress</h2>
+          <h2 class="montserrat-bold">Total progress</h2>
           <div class="progress-estadistics-container">
             <div class="progress-bar-container">
               <div class="progress-bar" style="width: ${progress.total}%"></div>
             </div>
-            <p class="porcentage">${progress.total}%</p>
+            <p class="porcentage montserrat-normal montserrat-normal" style="font-size:1em;font-weight:700;">${
+              progress.total
+            }%</p>
           </div>
         </div>
         <div class="habit-weekly">
-          <h2>Weekly progress</h2>
+          <h2 class="montserrat-bold">Weekly progress</h2>
           <div class="progress-estadistics-container">
             <div class="progress-bar-container">
               <div class="progress-bar" style="width: ${
                 progress.weekly
               }%"></div>
             </div>
-            <p class="porcentage">${progress.weekly}%</p>
+            <p class="porcentage montserrat-normal" style="font-size:1em;font-weight:700;">${
+              progress.weekly
+            }%</p>
           </div>
         </div>
       </div>
     </div>
     <div class="habit-container-notifications">
       <div class="habit-container-notifications-dates">
-        <p>Total time to reach goal: ${totalTime.hours} hours and ${
-      totalTime.minutes
+        <p class="montserrat-normal" style="font-size:.9em;">Total time to reach goal: ${
+          totalTime.hours
+        } hours and ${totalTime.minutes} minutes</p>
+        <p class="montserrat-normal" style="font-size:.9em;";>Remaining time: ${
+          remainingTime.days
+        } days, ${remainingTime.hours} hours, ${
+      remainingTime.minutes
     } minutes</p>
-        <p>Remaining time: ${remainingTime.days} days, ${
-      remainingTime.hours
-    } hours, ${remainingTime.minutes} minutes</p>
-        <p>Total time per week: ${totalTimeWeek.hours} hours and ${
-      totalTimeWeek.minutes
-    } minutes</p>
-        <p>Time spent from ${timeDedicateWeek.startOfWeek} to ${
-      timeDedicateWeek.endOfWeek
-    }: ${timeDedicateWeek.days} days, ${timeDedicateWeek.hours} hours, ${
-      timeDedicateWeek.minutes
-    } minutes</p>
+        <p class="montserrat-normal" style="font-size:.9em;">Total time per week: ${
+          totalTimeWeek.hours
+        } hours and ${totalTimeWeek.minutes} minutes</p>
+        <p class="montserrat-normal" style="font-size:.9em;">Time spent from ${
+          timeDedicateWeek.startOfWeek
+        } to ${timeDedicateWeek.endOfWeek}: ${timeDedicateWeek.days} days, ${
+      timeDedicateWeek.hours
+    } hours, ${timeDedicateWeek.minutes} minutes</p>
       </div>
       <div class="habit-container-notifications-phrase">
-        <p>${encouragementMessage}</p>
+        <p class="montserrat-normal" >${encouragementMessage}</p>
       </div>
     </div>
   `;

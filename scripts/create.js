@@ -31,7 +31,9 @@ function createdForm(habitData = null, isUpdate = false) {
     : "saveHabit(event)";
   container.innerHTML = `
   <div class="form-container">
-    <h1>${isUpdate ? "Update" : "Creation"} of Personal Habits</h1>
+    <h1 class="montserrat-bold">${
+      isUpdate ? "Update" : "Creation"
+    } of Personal Habits</h1>
     <form class="habit-form" onsubmit="${formAction}; return false;">
       <input type="hidden" id="habitId" value="${
         habitData ? habitData.id : ""
@@ -56,8 +58,14 @@ function createdForm(habitData = null, isUpdate = false) {
       <input type="date" id="endDate" placeholder="End Date" required />
       <input type="number" id="hours" placeholder="Hours" required min="0" max="24" />
       <input type="number" id="minutes" placeholder="Minutes" min="0" max="59" required />
-      <button type="submit">${isUpdate ? "Update" : "Save"} Habit</button>
-      ${isUpdate ? `<button onclick="goBack()"> Cancel </button>` : ""}
+      <button class="montserrat-normal" type="submit">${
+        isUpdate ? "Update" : "Save"
+      } Habit</button>
+      ${
+        isUpdate
+          ? `<button class="montserrat-normal" onclick="goBack()"> Cancel </button>`
+          : ""
+      }
     </form>
   </div>
   ${
@@ -92,11 +100,11 @@ function createCardHTML(habitData) {
   return `
     <div class="card-container">
       <div class="card-details">
-        <p>Category: ${habitData.category}</p>
-        <p>Title: ${habitData.title}</p>
-        <p>Start Date: ${startDateTime}</p>
-        <p>End Date: ${endDateTime}</p>
-        <p>Daily Duration: ${habitData.duration.hours} hours, ${habitData.duration.minutes} minutes</p>
+        <p class="montserrat-normal" style="font-size:.8em;">Category: ${habitData.category}</p>
+        <p class="montserrat-normal" style="font-size:.8em;">Title: ${habitData.title}</p>
+        <p class="montserrat-normal" style="font-size:.8em;">Start Date: ${startDateTime}</p>
+        <p class="montserrat-normal" style="font-size:.8em;">End Date: ${endDateTime}</p>
+        <p class="montserrat-normal" style="font-size:.8em;">Daily Duration: ${habitData.duration.hours} hours, ${habitData.duration.minutes} minutes</p>
       </div>
       <div class="card-buttons">
         <span class="close-btn" onclick="deleteHabit('${habitData.id}')"><i class="fa-solid fa-trash"></i></span>
