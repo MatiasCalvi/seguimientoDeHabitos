@@ -1,8 +1,6 @@
 .section {
    height: 84vh;
- 
 }
-
 body {
    font-family: Arial, sans-serif;
    margin: 0;
@@ -91,8 +89,4 @@ button:hover {
    .card{
       width: 100%;
    }
- } 
-
-  
-  
-  
+ }
