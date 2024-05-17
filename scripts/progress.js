@@ -100,7 +100,7 @@ function renderHabitsProgress() {
     } hours, ${timeDedicateWeek.minutes} minutes</p>
       </div>
       <div class="habit-container-notifications-phrase">
-        <p class="montserrat-normal" >${encouragementMessage}</p>
+        <p class="montserrat-normal" style="color:#ff7300;border:2px solid;padding:7px;">${encouragementMessage}</p>
       </div>
     </div>
   `;
