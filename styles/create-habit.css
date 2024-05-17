@@ -1,12 +1,16 @@
-p,h1{
-    font-family: "Roboto Condensed", sans-serif;
+.montserrat-normal,.montserrat-bold{
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
     font-style: normal;
 }
+ 
+.montserrat-normal{
+    font-weight: 400;
+}
 
-p{
-    font-size: .9em;
+.montserrat-bold{
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .container {

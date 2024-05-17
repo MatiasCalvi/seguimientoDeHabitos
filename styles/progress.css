@@ -1,17 +1,25 @@
+.montserrat-normal,.montserrat-bold{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+ 
+.montserrat-normal{
+    font-weight: 400;
+}
+
+.montserrat-bold{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 #mainContainer {
     min-height: 84vh;
     display: flex;
     gap: 40px;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-}
-
-p,h2{
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    padding: 40px 20px;
 }
 
 .no-habits-message {

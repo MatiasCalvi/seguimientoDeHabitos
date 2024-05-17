@@ -1,41 +1,60 @@
-#main-container{
+.montserrat-normal,.montserrat-bold{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+ 
+.montserrat-normal{
+    font-weight: 400;
+}
+
+#mainContainer{
     min-height: 84vh; 
     display: flex;
-    flex-direction: column;
-}
-
-.contact-container-context{
-    padding: 3rem 1rem 4rem 1rem ;
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    width: 100%;
 }
 
-.contact-container-context h1{
-    font-size: 2em;
-    text-align: center;
+.contact-container-sub,.contact-container-form{
+    width: 50%;
+    height: 100%; 
 }
 
 .contact-container-sub{
-    flex-grow: 1;
-    padding: 40px 20px;
+    background-image: url("https://images.pexels.com/photos/3612885/pexels-photo-3612885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    min-height: 84vh;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, .739);
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-container-sub-information{
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    height: 400px;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.contact-container-sub-information h2,.contact-container-sub-information p{
+    color: #fff;
 }
 
 .contact-container-sub-information h2{
     text-transform: uppercase;
     font-size: 1.2em;
+    text-decoration: underline;
 }
 
 .contact-container-sub-information p{
@@ -110,15 +129,25 @@
     border: 2px solid red;
   }
 
-@media screen and (max-width: 977px) {
-    
-    .contact-container-context{
-        padding: 3rem 1rem 1rem 1rem ; ;
+@media only screen and (max-width: 1000px) {
+    #mainContainer{
+        flex-direction: column;
     }
     .contact-container-sub{
-        padding: 10px 20px 40px 20px;
+        width: 100%;
     }
     .contact-container-sub-information{
-        padding: 20px 20px 50px 20px;
+        min-width: 360px;
+        padding: 20px 40px;
+        width: 100%;
+        border-radius: 0;
+    }
+    .contact-container-form{
+        width: 100%;
+        padding: 3rem 0;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

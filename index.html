@@ -6,9 +6,45 @@
     <title>Habit tracking</title>
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Roboto+Condensed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2981789521.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navigation">
+      <div class="logo">
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="none" stroke="#ff7300" stroke-width="5">
+            <path d="M 50,100 A 50,50 0 0 1 150,100" marker-end="url(#arrow)" />
+            <path d="M 150,100 A 50,50 0 0 1 50,100" marker-end="url(#arrow)" />
+          </g>
+          <defs>
+            <marker
+              id="arrow"
+              markerWidth="10"
+              markerHeight="10"
+              refX="5"
+              refY="5"
+              orient="auto"
+            >
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff7300" />
+            </marker>
+          </defs>
+          <path d="M 100,60 L 110,40 L 120,60 Z" fill="#ff7300" />
+        </svg>
+      </div>
       <div class="menu-toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -17,77 +53,157 @@
       </div>
       <ul class="nav-list" id="nav-list">
         <li class="nav-item">
-          <a href="#" class="nav-link active-link">Index</a>
+          <a href="#" class="nav-link active-link montserrat-normal">Index</a>
         </li>
         <li class="nav-item">
-          <a href="/pages/create-habit.html" class="nav-link">YourHabits</a>
+          <a href="/pages/create-habit.html" class="nav-link montserrat-normal">YourHabits</a>
         </li>
         <li class="nav-item">
-          <a href="/pages/your-progress.html" class="nav-link">YourProgress</a>
+          <a href="/pages/your-progress.html" class="nav-link montserrat-normal">YourProgress</a>
         </li>
         <li class="nav-item">
-          <a href="/pages/contact.html" class="nav-link">Contact</a>
+          <a href="/pages/contact.html" class="nav-link montserrat-normal">Contact</a>
         </li>
       </ul>
     </nav>
-    <div class="container">
-      <header>
-        <h1>Beneficios de generar hábitos</h1>
-        <p>
-          Los hábitos son fundamentales para alcanzar el éxito y el bienestar
-          personal. Desarrollar buenos hábitos puede ayudarte a ser más
-          productivo, saludable y feliz. Te permiten automatizar comportamientos
-          positivos, liberando energía mental para otras tareas importantes.
+    <header class="header">
+      <video autoplay muted loop id="videoFondo">
+        <source
+          src="/assets/videos/3125907-uhd_2560_1440_25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="content-header">
+        <h1 class="montserrat-bold">Benefits of creating habits</h1>
+        <h2 class="montserrat-normal">Start your healthy life now!</h2>
+        <a class="fancy" href="/pages/create-habit.html">
+          <span class="top-key"></span>
+          <span class="text">Create your Habit</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </a>
+      </div>
+    </header>
+    <main class="container">
+      <h2 class="container-title montserrat-bold">
+        What specifically are
+        <span
+          style="color: #ff7300; font-weight: 800; text-decoration: underline"
+          >habits</span
+        >?
+      </h2>
+      <div class="container-imgs">
+        <picture class="container-img-1"> </picture>
+        <picture class="container-img-2"> </picture>
+        <picture class="container-img-3"> </picture>
+        <picture class="container-img-4"> </picture>
+        <picture class="container-img-5"> </picture>
+        <picture class="container-img-6"> </picture>
+      </div>
+      <div class="container-dialog">
+        <p class="open-sans-normal">
+          Habits are regularly repeated behaviors that are performed
+          automatically and that, over time, require little or no conscious
+          effort. They are formed through perseverance and repetition, and can
+          be both positive and negative. The habits positives contribute to
+          improving our quality of life, while the negative ones can have
+          detrimental effects.
         </p>
-      </header>
-      <section>
-        <h2>¡Empezá ya con tu vida sana!</h2>
-        <button onclick="location.href='/pages/create-habit.html'">
-          Crea tu hábito
-        </button>
-      </section>
-      <section class="testimonials">
-        <h2>Testimonios</h2>
-        <div class="testimonial-cards">
-          <div class="card">
-            <p>
-              Si un cambio de lentes mejora tu vista, un cambio de pensamiento
-              mejora tu vida
-            </p>
-            <p><strong>- Steve Jobs.</strong></p>
-          </div>
-          <div class="card">
-            <p>
-              Somos lo que hacemos repetidamente. La excelencia, entonces, no es
-              un acto, sino un hábito
-            </p>
-            <p><strong>- Aristóteles.</strong></p>
-          </div>
-          <div class="card">
-            <p>
-              Tus hábitos te elevarán o te derribarán. Tu puedes aprender a
-              elevarte por sobre tus hábitos y vivir de manera consciente de
-              acuerdo con tu propia elección.
-            </p>
-            <p><strong>- Benjamin Franklin.</strong></p>
-          </div>
-          <div class="card">
-            <p>
-              Primero hacemos nuestros hábitos, y luego nuestros hábitos nos
-              hacen a nosotros.
-            </p>
-            <p><strong>- John Dryden.</strong></p>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+      <h2 class="montserrat-bold title-benefits">
+        <span class="title-benefits-span">6</span> reasons why it is
+        <span
+          style="color: #ff7300; font-weight: 800; text-decoration: underline"
+          >important</span
+        >
+        to have habits!
+      </h2>
+      <div class="benefits">
+        <blockquote class="block">
+          <p class="paragraph open-sans-normal">
+            Activities such as meditation and physical exercise can improve mood
+            and reduce stress and anxiety levels
+          </p>
+          <footer>
+            <cite
+              ><span class="cite-name"><i class="fa-solid fa-1"></i></span
+            ></cite>
+          </footer>
+        </blockquote>
+        <blockquote class="block">
+          <p class="paragraph open-sans-normal">
+            Healthy habits, such as a balanced diet and regular exercise, help
+            maintain good physical condition and prevent diseases
+          </p>
+          <footer>
+            <cite
+              ><span class="cite-name"><i class="fa-solid fa-2"></i></span
+            ></cite>
+          </footer>
+        </blockquote>
+        <blockquote class="block">
+          <p class="paragraph open-sans-normal">
+            Organization and time management habits can lead to greater
+            efficiency at work and in your personal life
+          </p>
+          <footer>
+            <cite
+              ><span class="cite-name"><i class="fa-solid fa-3"></i></span
+            ></cite>
+          </footer>
+        </blockquote>
+        <blockquote class="block">
+          <p class="paragraph open-sans-normal">
+            The constant repetition of habits encourages self-discipline, a
+            valuable attribute for achieving long-term goals.
+          </p>
+          <footer>
+            <cite
+              ><span class="cite-name"><i class="fa-solid fa-4"></i></span
+            ></cite>
+          </footer>
+        </blockquote>
+        <blockquote class="block">
+          <p class="paragraph open-sans-normal">
+            Habits such as effective communication and empathy can strengthen
+            personal and professional relationships
+          </p>
+          <footer>
+            <cite
+              ><span class="cite-name"><i class="fa-solid fa-5"></i></span
+            ></cite>
+          </footer>
+        </blockquote>
+        <blockquote class="block">
+          <p class="paragraph open-sans-normal">
+            Maintaining healthy habits has a positive impact on general
+            well-being, improving quality of life and happiness
+          </p>
+          <footer>
+            <cite
+              ><span class="cite-name"><i class="fa-solid fa-6"></i></span
+            ></cite>
+          </footer>
+        </blockquote>
+      </div>
+      <h3 class="montserrat-normal" style="text-align: center">
+        Take the first step towards the best version of yourself:
+      </h3>
+      <h3 class="montserrat-normal" style="text-align: center">
+        Click here and start transforming your life with positive habits
+        <span style="text-decoration: underline; font-weight: 800">today</span>!
+      </h3>
+      <a class="fancy2" href="/pages/create-habit.html">
+        <span class="top-key2"></span>
+        <span class="text2">Create your Habit</span>
+        <span class="bottom-key-3"></span>
+        <span class="bottom-key-4"></span>
+      </a>
+    </main>
     <footer class="footer">
       <div class="footer-content">
         <div class="developer-info">
-          <p>
-            <span class="copyright">CopyRight &copy; 2024</span> Desarrollado
-            por Calvi Matias y Castillon Alexis
-          </p>
+          <p>Desarrollado por Calvi Matias y Castillon Alexis</p>
         </div>
         <ul class="footer-list" id="footer-list">
           <li class="footer-item">
