@@ -12,7 +12,7 @@ function showErrorMessage(message) {
       errorMessage.remove();
     });
   });
-
+ 
   errorMessagesContainer.appendChild(errorMessage);
   errorMessagesContainer.style.display = "block";
 
@@ -143,4 +143,6 @@ document
       console.log(validationResult.code);
       console.log(validationResult.message);
     }
+    
   });
+
