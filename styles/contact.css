@@ -8,6 +8,11 @@
     font-weight: 400;
 }
 
+.montserrat-bold{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 #mainContainer{
     min-height: 84vh; 
     display: flex;
@@ -106,7 +111,7 @@
 }
 
 .error-message {
-    background-color: rgb(255, 123, 16);
+    background-color: #ff7300;
     color: white;
     font-size: .8em;
     padding: 10px 20px;
