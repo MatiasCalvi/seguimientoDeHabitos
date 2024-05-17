@@ -6,7 +6,17 @@
     <title>Habit creation</title>
     <link rel="stylesheet" href="/styles/create-habit.css" />
     <link rel="stylesheet" href="/styles/general.css" />
-    <script src="/js/create.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2981789521.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Poetsen+One&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navigation">
@@ -18,7 +28,7 @@
       </div>
       <ul class="nav-list" id="nav-list">
         <li class="nav-item">
-          <a href="/index.html" class="nav-link">Index</a>
+          <a href="/index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link active-link">YourHabits</a>
@@ -31,31 +41,15 @@
         </li>
       </ul>
     </nav>
-    <div class="container">
-      <h1>Seguimiento de Hábitos Personales</h1>
-      <div class="habit-form">
-        <input type="text" id="habit" placeholder="Ingrese el hábito" />
-        <input
-          type="number"
-          id="time-limit"
-          placeholder="Tiempo límite en minutos"
-        />
-        <button onclick="addHabit()">Agregar Hábito</button>
-      </div>
-      <div id="habit-list"></div>
-      <div id="statistics"></div>
-    </div>
+    <div class="container"></div>
     <footer class="footer">
       <div class="footer-content">
         <div class="developer-info">
-          <p>
-            <span class="copyright">CopyRight &copy; 2024</span> Desarrollado
-            por Calvi Matias y Castillon Alexis
-          </p>
+          <p>Desarrollado por Calvi Matias y Castillon Alexis</p>
         </div>
         <ul class="footer-list" id="footer-list">
           <li class="footer-item">
-            <a href="/index.html" class="footer-link">Index</a>
+            <a href="/index.html" class="footer-link">Home</a>
           </li>
           <li class="footer-item">
             <a href="#" class="footer-link">YourHabits</a>
@@ -71,7 +65,7 @@
         </ul>
       </div>
     </footer>
-    <script src="/js/create.js"></script>
-    <script src="/js/general.js"></script>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/create.js"></script>
   </body>
 </html>
