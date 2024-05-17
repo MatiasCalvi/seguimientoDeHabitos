@@ -17,6 +17,18 @@ function displayNoHabitsMessage() {
   noHabitsMessage.style.fontSize = "1.3em";
   noHabitsMessage.style.marginTop = "9rem";
   document.getElementById("habitContainer").appendChild(noHabitsMessage);
+  window.addEventListener("resize", adjustMarginTop);
+}
+
+function adjustMarginTop() {
+  const screenWidth = window.innerWidth;
+  const noHabitsMessage = document.querySelector(".no-habits-message");
+
+  if (screenWidth <= 768) {
+    noHabitsMessage.style.marginTop = "2rem";
+  } else {
+    noHabitsMessage.style.marginTop = "9rem";
+  }
 }
 
 function getCardById(id) {
