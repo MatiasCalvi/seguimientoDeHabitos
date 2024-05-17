@@ -168,7 +168,7 @@
 .fancy2{
    border: 2px solid #000;
    color: #000;
-   margin-bottom: 4rem;
+   margin-bottom: 8rem;
 }
 
 .fancy2::before{
@@ -256,7 +256,7 @@
 }
 
 .title-benefits{
-   margin: 2rem 0 0 0;
+   margin: 3rem 0;
    font-size: 2em;
    text-align: center;
 }
