@@ -4,6 +4,16 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+*::-webkit-scrollbar{
+    width: 10px;
+    background-color: #e8baba;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #ff7300;
+    border-radius: 8px;
+}
   
 body {
     background-color: #fff;
@@ -25,6 +35,7 @@ body {
     display: flex;
     margin-right: 20px;
     gap: 20px;
+    z-index: 100; 
 }
   
 .nav-item {
@@ -77,7 +88,7 @@ body {
 }
 
 .active-link {
-    border-bottom: 2px solid #007bff; 
+    border-bottom: 3px solid #ff7300; 
 }
   
 .active-link-mobile {
@@ -161,7 +172,7 @@ body {
       right: 0;
       width: 100%;
       background-color: #1a1a1a;
-      padding: 20px;
+      padding: 20px 0 20px 0;
     }
   
     .nav-item {
@@ -178,8 +189,8 @@ body {
     
     .nav-link.active-link, 
     .nav-link.active-link-mobile {
-        background-color: #fff; 
-        color: #000; 
+        background-color: #000; 
+        color: #fff;
     }
 
     .menu-toggle.open + .nav-list {
