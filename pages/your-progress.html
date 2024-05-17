@@ -6,6 +6,17 @@
     <title>Your Progress</title>
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/progress.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2981789521.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Poetsen+One&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navigation">
@@ -17,7 +28,7 @@
       </div>
       <ul class="nav-list" id="nav-list">
         <li class="nav-item">
-          <a href="/index.html" class="nav-link">Index</a>
+          <a href="/index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
           <a href="/pages/create-habit.html" class="nav-link">YourHabits</a>
@@ -30,26 +41,15 @@
         </li>
       </ul>
     </nav>
-    <main id="main-container">
-      <!--  <div>
-        <div class="card"></div>
-        <div class="progress">
-          <div class="weekly"></div>
-          <div class="monthly"></div>
-        </div>
-      </div> -->
-    </main>
+    <main id="mainContainer"></main>
     <footer class="footer">
       <div class="footer-content">
         <div class="developer-info">
-          <p>
-            <span class="copyright">CopyRight &copy; 2024</span> Desarrollado
-            por Calvi Matias y Castillon Alexis
-          </p>
+          <p>Desarrollado por Calvi Matias y Castillon Alexis</p>
         </div>
         <ul class="footer-list" id="footer-list">
           <li class="footer-item">
-            <a href="/index.html" class="footer-link">Index</a>
+            <a href="/index.html" class="footer-link">Home</a>
           </li>
           <li class="footer-item">
             <a href="/pages/create-habit.html" class="footer-link"
@@ -66,6 +66,6 @@
       </div>
     </footer>
   </body>
-  <script src="/js/progress.js"></script>
-  <script src="/js/general.js"></script>
+  <script src="/scripts/general.js"></script>
+  <script src="/scripts/progress.js"></script>
 </html>
