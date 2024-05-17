@@ -13,6 +13,9 @@ function displayNoHabitsMessage() {
   noHabitsMessage.textContent =
     "There are no registered habits, please create your habit so you can visualize it";
   noHabitsMessage.classList.add("no-habits-message");
+  noHabitsMessage.classList.add("montserrat-normal");
+  noHabitsMessage.style.fontSize = "1.3em";
+  noHabitsMessage.style.marginTop = "9rem";
   document.getElementById("habitContainer").appendChild(noHabitsMessage);
 }
 

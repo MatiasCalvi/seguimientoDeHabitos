@@ -110,8 +110,8 @@ function renderHabitsProgress() {
 
 function displayNoHabitsMessage() {
   const mainContainer = document.getElementById("mainContainer");
-  mainContainer.innerHTML = `<h1 class="no-habits-message">There are no registered habits, please create your habit so you can view it.
-  To do this click <span class ="link"><a href="../pages/create-habit.html">here.</a></span></h1>`;
+  mainContainer.innerHTML = `<h1 class="no-habits-message montserrat-normal">There are no registered habits, please create your habit so you can view it.
+  To do this click <span class ="link"><a href="../pages/create-habit.html" style="color:#ff7300;">here.</a></span></h1>`;
 }
 
 function deleteHabit(habitId) {
