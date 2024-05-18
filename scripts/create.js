@@ -14,20 +14,8 @@ function displayNoHabitsMessage() {
     "There are no registered habits, please create your habit so you can visualize it";
   noHabitsMessage.classList.add("no-habits-message");
   noHabitsMessage.classList.add("montserrat-normal");
-  window.addEventListener("resize", adjustMarginTop);
   noHabitsMessage.style.fontSize = "1.3em";
   document.getElementById("habitContainer").appendChild(noHabitsMessage);
-}
-
-function adjustMarginTop() {
-  const screenWidth = window.innerWidth;
-  const noHabitsMessage = document.querySelector(".no-habits-message");
-
-  if (screenWidth <= 768) {
-    noHabitsMessage.style.marginTop = "2rem";
-  } else {
-    noHabitsMessage.style.marginTop = "9rem";
-  }
 }
 
 function getCardById(id) {
