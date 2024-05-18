@@ -18,6 +18,7 @@
     padding: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 84vh;
     gap: 20px;
 }
@@ -28,7 +29,6 @@
     gap: 30px;
     width: calc(50% - 10px); 
     max-width: 500px;
-    padding-top: 20px; 
 }
 
 .habit-container {
@@ -149,6 +149,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .no-habits-message {
     text-align: center;
+    max-width: 365px;
     margin-top: 9rem; 
     color: #666; 
 }
@@ -188,7 +189,8 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (max-width: 768px) {
     .container {
       flex-direction: column;
-      padding: 20px 20px 40px 20px; 
+      padding: 20px 20px 40px 20px;
+      min-height: 100vh; 
     }
 
     .form-container,
@@ -200,7 +202,7 @@ input[type="number"]::-webkit-outer-spin-button {
     .follow-up-form button {
         max-width: 300px;
     }
-    
+
     .no-habits-message{
         margin-top: 2rem;
     }
