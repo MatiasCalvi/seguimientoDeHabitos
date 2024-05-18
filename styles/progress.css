@@ -75,6 +75,7 @@
 .habit-card{
     display: flex;
     flex-direction: column;
+    width: 350px;
     gap: 5px;
     justify-content: center;
     padding: 20px;
@@ -153,6 +154,11 @@
     .habit-card{
         align-items: center;
         gap: 15px;
+        width: 100%;
+    }
+
+    .habit-card h2{
+        text-align: center;
     }
   
     .progress-bar-container {
@@ -174,8 +180,15 @@
         padding: 3rem 10px;
         justify-content: center;
     }
-  
-    .habit-card, .habit-progress {
-      padding: 20px;
+
+    .habit-progress,
+    .habit-card,
+    .habit-container-notifications{
+        padding: 30px 20px;
+    }
+
+    .habit-container-notifications{
+        flex-direction: column;
+        gap: 25px;
     }
 }
