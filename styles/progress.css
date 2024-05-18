@@ -179,8 +179,10 @@
     #mainContainer {
         padding: 3rem 10px;
         justify-content: center;
-    }
+    }  
+}
 
+@media (max-width: 350px) {
     .habit-progress,
     .habit-card,
     .habit-container-notifications{
