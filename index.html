@@ -26,8 +26,10 @@
             width="50"
             height="50"
             viewBox="0 0 200 200"
+            alt="Habit tracking app logo"
             xmlns="http://www.w3.org/2000/svg"
           >
+            >
             <g fill="none" stroke="#ff7300" stroke-width="5">
               <path
                 d="M 50,100 A 50,50 0 0 1 150,100"
@@ -53,7 +55,11 @@
             <path d="M 100,60 L 110,40 L 120,60 Z" fill="#ff7300" /></svg
         ></a>
       </div>
-      <div class="menu-toggle" id="mobile-menu">
+      <div
+        class="menu-toggle"
+        id="mobile-menu"
+        aria-label="Open navigation menu"
+      >
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -61,20 +67,34 @@
       </div>
       <ul class="nav-list" id="nav-list">
         <li class="nav-item">
-          <a href="#" class="nav-link active-link montserrat-normal">Home</a>
+          <a
+            href="#"
+            class="nav-link active-link montserrat-normal"
+            aria-label="Go to home page"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a href="/pages/create-habit.html" class="nav-link montserrat-normal"
+          <a
+            href="/pages/create-habit.html"
+            class="nav-link montserrat-normal"
+            aria-label="Go to create habits page"
             >YourHabits</a
           >
         </li>
         <li class="nav-item">
-          <a href="/pages/your-progress.html" class="nav-link montserrat-normal"
+          <a
+            href="/pages/your-progress.html"
+            class="nav-link montserrat-normal"
+            aria-label="Go to progress page"
             >YourProgress</a
           >
         </li>
         <li class="nav-item">
-          <a href="/pages/contact.html" class="nav-link montserrat-normal"
+          <a
+            href="/pages/contact.html"
+            class="nav-link montserrat-normal"
+            aria-label="Go to contact us page"
             >Contact</a
           >
         </li>
@@ -246,12 +266,18 @@
         </div>
         <ul class="footer-list" id="footer-list">
           <li class="footer-item">
-            <a href="#" class="footer-link montserrat-normal">Home</a>
+            <a
+              href="#"
+              class="footer-link montserrat-normal"
+              aria-label="Go to home page"
+              >Home</a
+            >
           </li>
           <li class="footer-item">
             <a
               href="/pages/create-habit.html"
               class="footer-link montserrat-normal"
+              aria-label="Go to create habits page"
               >YourHabits</a
             >
           </li>
@@ -259,11 +285,15 @@
             <a
               href="/pages/your-progress.html"
               class="footer-link montserrat-normal"
+              aria-label="Go to progress page"
               >YourProgress</a
             >
           </li>
           <li class="footer-item">
-            <a href="/pages/contact.html" class="footer-link montserrat-normal"
+            <a
+              href="/pages/contact.html"
+              class="footer-link montserrat-normal"
+              aria-label="Go to contact us page"
               >Contact</a
             >
           </li>
